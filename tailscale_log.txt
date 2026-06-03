@@ -1,0 +1,390 @@
+2026/06/03 02:17:36 logtail started
+2026/06/03 02:17:36 Program starting: v1.80.2-t62b8bf6a0-g3c35ee987, Go 1.23.5: []string{"./tailscaled"}
+2026/06/03 02:17:36 LogID: 8bb8e646a63e2f1f1159f1a5aa4870edf6fd901eb88174dcf4a8c8082ac8f185
+2026/06/03 02:17:36 logpolicy: using system state directory "/var/lib/tailscale"
+2026/06/03 02:17:36 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2026/06/03 02:17:36 dns: [rc=resolved resolved=not-in-use ret=direct]
+2026/06/03 02:17:36 dns: using "direct" mode
+2026/06/03 02:17:36 dns: using *dns.directManager
+2026/06/03 02:17:36 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2026/06/03 02:17:36 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2026/06/03 02:17:36 dns: [rc=resolved resolved=not-in-use ret=direct]
+2026/06/03 02:17:36 dns: using "direct" mode
+2026/06/03 02:17:36 dns: using *dns.directManager
+2026/06/03 02:17:36 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.74/16 llu6]} v4=true v6=false}
+2026/06/03 02:17:36 onPortUpdate(port=59726, network=udp6)
+2026/06/03 02:17:36 router: using firewall mode pref 
+2026/06/03 02:17:36 router: default choosing iptables
+2026/06/03 02:17:36 router: netfilter running in iptables mode v6 = true, v6filter = true, v6nat = true
+2026/06/03 02:17:36 onPortUpdate(port=52914, network=udp4)
+2026/06/03 02:17:36 magicsock: disco key = d:a13e4a3f5b673b7d
+2026/06/03 02:17:36 Creating WireGuard device...
+2026/06/03 02:17:36 Bringing WireGuard device up...
+2026/06/03 02:17:36 Bringing router up...
+2026/06/03 02:17:36 external route: up
+2026/06/03 02:17:36 Clearing router settings...
+2026/06/03 02:17:36 Starting network monitor...
+2026/06/03 02:17:36 Engine created.
+2026/06/03 02:17:36 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.74/16 llu6]} v4=true v6=false}
+2026/06/03 02:17:36 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.74/16","fe80::7e1e:52ff:fef6:15ee/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkIFCjHO","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S9hXu","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2026/06/03 02:17:36 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.74/16","fe80::7e1e:52ff:fef6:15ee/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::1706:5570:516e:e413/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkIFCjHO","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5S9hXu","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":4,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2026/06/03 02:17:36 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.74/16 llu6]} v4=true v6=false}
+2026/06/03 02:17:36 onPortUpdate(port=59726, network=udp6)
+2026/06/03 02:17:36 onPortUpdate(port=52914, network=udp4)
+2026/06/03 02:17:36 Rebind; defIf="eth0", ips=[10.0.1.74/16 fe80::7e1e:52ff:fef6:15ee/64]
+2026/06/03 02:17:36 magicsock: 0 active derp conns
+2026/06/03 02:17:36 pm: using backend prefs for "profile-ae54": Prefs{ra=false dns=true want=true routes=[] statefulFiltering=false nf=on update=check Persist{o=, n=[cIO0s] u="leonarditons12@gmail.com"}}
+2026/06/03 02:17:36 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.1.74
+2026/06/03 02:17:36 logpolicy: using system state directory "/var/lib/tailscale"
+2026/06/03 02:17:36 got LocalBackend in 79ms
+2026/06/03 02:17:36 Start
+2026/06/03 02:17:36 Backend: logs: be:8bb8e646a63e2f1f1159f1a5aa4870edf6fd901eb88174dcf4a8c8082ac8f185 fe:
+2026/06/03 02:17:36 control: client.Login(0)
+2026/06/03 02:17:36 control: doLogin(regen=false, hasUrl=false)
+2026/06/03 02:17:36 health(warnable=warming-up): error: Tailscale is starting. Please wait.
+2026/06/03 02:17:37 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2026/06/03 02:17:37 control: RegisterReq: onode= node=[cIO0s] fup=false nks=false
+2026/06/03 02:17:37 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2026/06/03 02:17:37 health(warnable=not-in-map-poll): ok
+2026/06/03 02:17:37 control: netmap: got new dial plan from control
+2026/06/03 02:17:37 active login: leonarditons12@gmail.com
+2026/06/03 02:17:37 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
+2026/06/03 02:17:37 magicsock: SetPrivateKey called (init)
+2026/06/03 02:17:37 wgengine: Reconfig: configuring userspace WireGuard config (with 0/2 peers)
+2026/06/03 02:17:37 wgengine: Reconfig: configuring router
+2026/06/03 02:17:37 wgengine: Reconfig: configuring DNS
+2026/06/03 02:17:37 dns: Set: {DefaultResolvers:[] Routes:{tailc43064.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tailc43064.ts.net.] Hosts:3}
+2026/06/03 02:17:37 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:3 LocalDomains:[tailc43064.ts.net.]+65arpa, cloud="azure"}
+2026/06/03 02:17:37 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tailc43064.ts.net. gbuypll1kt3upd1osau5klzz5b.cx.internal.cloudapp.net.] }
+2026/06/03 02:17:37 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
+2026/06/03 02:17:37 restarted resolved after 1ms
+2026/06/03 02:17:37 peerapi: serving on http://100.103.168.23:46993
+2026/06/03 02:17:37 peerapi: serving on http://[fd7a:115c:a1e0::8034:a817]:42872
+2026/06/03 02:17:37 magicsock: home DERP changing from derp-0 [0ms] to derp-27 [6ms]
+2026/06/03 02:17:37 magicsock: home is now derp-27 (iad)
+2026/06/03 02:17:37 magicsock: adding connection to derp-27 for home-keep-alive
+2026/06/03 02:17:37 magicsock: 1 active derp conns: derp-27=cr0s,wr0s
+2026/06/03 02:17:37 derphttp.Client.Connect: connecting to derp-27 (iad)
+2026/06/03 02:17:37 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2026/06/03 02:17:37 health(warnable=no-derp-connection): ok
+2026/06/03 02:17:37 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#27 portmap= link="" firewallmode="ipt-default"}
+2026/06/03 02:17:37 health(warnable=warming-up): ok
+2026/06/03 02:17:37 magicsock: endpoints changed: 51.8.152.67:53272 (stun), 10.0.1.74:52914 (local), 172.17.0.1:52914 (local)
+2026/06/03 02:17:37 health(warnable=no-derp-connection): ok
+2026/06/03 02:17:37 magicsock: derp-27 connected; connGen=1
+2026/06/03 02:17:37 health(warnable=no-derp-connection): ok
+2026/06/03 02:17:37 [RATELIMIT] format("health(warnable=%s): ok")
+2026/06/03 02:17:41 magicsock: disco: node [a8UVS] d:4f9d2dd2507a08c8 now using 201.210.60.70:23670 mtu=1360 tx=d36518e39142
+2026/06/03 02:18:49 wgengine: idle peer [w/r3P] now active, reconfiguring WireGuard
+2026/06/03 02:18:50 wgengine: Reconfig: configuring userspace WireGuard config (with 1/2 peers)
+2026/06/03 02:18:50 magicsock: disco: node [w/r3P] d:36cc942f7bee3259 now using 38.43.254.176:41641 mtu=1360 tx=281246ee23b0
+2026/06/03 02:19:45 wgengine: idle peer [a8UVS] now active, reconfiguring WireGuard
+2026/06/03 02:19:45 wgengine: Reconfig: configuring userspace WireGuard config (with 2/2 peers)
+2026/06/03 02:20:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:20:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr3m0s,wr2s
+2026/06/03 02:20:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:20:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:21:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:21:50 magicsock: 1 active derp conns: derp-27=cr4m0s,wr2s
+2026/06/03 02:21:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:21:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr4m0s,wr2s
+2026/06/03 02:21:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:21:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:22:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:22:50 magicsock: 1 active derp conns: derp-27=cr5m0s,wr2s
+2026/06/03 02:22:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:22:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr5m0s,wr2s
+2026/06/03 02:22:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:22:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:23:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:23:50 magicsock: 1 active derp conns: derp-27=cr6m0s,wr2s
+2026/06/03 02:23:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:23:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr6m0s,wr2s
+2026/06/03 02:23:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:23:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:24:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:24:50 magicsock: 1 active derp conns: derp-27=cr7m0s,wr2s
+2026/06/03 02:24:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:24:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr7m0s,wr2s
+2026/06/03 02:24:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:24:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:25:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:25:50 magicsock: 1 active derp conns: derp-27=cr8m0s,wr2s
+2026/06/03 02:25:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:25:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr8m0s,wr2s
+2026/06/03 02:25:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:25:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:26:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:26:50 magicsock: 1 active derp conns: derp-27=cr9m0s,wr2s
+2026/06/03 02:26:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:26:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr9m0s,wr2s
+2026/06/03 02:26:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:26:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:27:44 Received error: PollNetMap: unexpected EOF
+2026/06/03 02:27:44 control: controlhttp: forcing port 443 dial due to recent noise dial
+2026/06/03 02:27:44 control: controlhttp: forcing port 443 dial due to recent noise dial
+2026/06/03 02:27:44 control: netmap: got new dial plan from control
+2026/06/03 02:27:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:27:50 magicsock: 1 active derp conns: derp-27=cr10m0s,wr2s
+2026/06/03 02:27:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:27:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr10m0s,wr2s
+2026/06/03 02:27:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:27:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:28:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:28:50 magicsock: 1 active derp conns: derp-27=cr11m0s,wr2s
+2026/06/03 02:28:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:28:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr11m0s,wr2s
+2026/06/03 02:28:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:28:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:29:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:29:50 magicsock: 1 active derp conns: derp-27=cr12m0s,wr2s
+2026/06/03 02:29:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:29:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr12m0s,wr2s
+2026/06/03 02:29:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:29:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:30:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:30:50 magicsock: 1 active derp conns: derp-27=cr13m0s,wr2s
+2026/06/03 02:30:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:30:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr13m0s,wr2s
+2026/06/03 02:30:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:30:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:31:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:31:50 magicsock: 1 active derp conns: derp-27=cr14m0s,wr2s
+2026/06/03 02:31:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:31:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr14m0s,wr2s
+2026/06/03 02:31:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:31:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:32:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:32:50 magicsock: 1 active derp conns: derp-27=cr15m0s,wr2s
+2026/06/03 02:32:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:32:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr15m0s,wr2s
+2026/06/03 02:32:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:32:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:33:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:33:50 magicsock: 1 active derp conns: derp-27=cr16m0s,wr1m0s
+2026/06/03 02:33:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:33:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr16m0s,wr1m0s
+2026/06/03 02:33:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:33:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:34:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:34:50 magicsock: 1 active derp conns: derp-27=cr17m0s,wr2m0s
+2026/06/03 02:34:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:34:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr17m0s,wr2m0s
+2026/06/03 02:34:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:34:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:35:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:35:50 magicsock: 1 active derp conns: derp-27=cr18m0s,wr3m0s
+2026/06/03 02:35:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:35:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr18m0s,wr3m0s
+2026/06/03 02:35:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:35:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:36:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:36:50 magicsock: 1 active derp conns: derp-27=cr19m0s,wr4m0s
+2026/06/03 02:36:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:36:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr19m0s,wr4m0s
+2026/06/03 02:36:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:36:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:37:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:37:50 magicsock: 1 active derp conns: derp-27=cr20m0s,wr5m0s
+2026/06/03 02:37:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:37:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr20m0s,wr5m0s
+2026/06/03 02:37:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:37:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:38:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:38:50 magicsock: 1 active derp conns: derp-27=cr21m0s,wr6m0s
+2026/06/03 02:38:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:38:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr21m0s,wr6m0s
+2026/06/03 02:38:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:38:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:39:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:39:50 magicsock: 1 active derp conns: derp-27=cr22m0s,wr7m0s
+2026/06/03 02:39:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:39:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr22m0s,wr7m0s
+2026/06/03 02:39:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:39:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:40:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:40:50 magicsock: 1 active derp conns: derp-27=cr23m0s,wr8m0s
+2026/06/03 02:40:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:40:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr23m0s,wr8m0s
+2026/06/03 02:40:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:40:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:41:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:41:50 magicsock: 1 active derp conns: derp-27=cr24m0s,wr9m0s
+2026/06/03 02:41:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:41:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr24m0s,wr9m0s
+2026/06/03 02:41:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:41:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:42:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:42:50 magicsock: 1 active derp conns: derp-27=cr25m0s,wr10m0s
+2026/06/03 02:42:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:42:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr25m0s,wr10m0s
+2026/06/03 02:42:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:42:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:43:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:43:50 magicsock: 1 active derp conns: derp-27=cr26m0s,wr11m0s
+2026/06/03 02:43:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:43:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr26m0s,wr11m0s
+2026/06/03 02:43:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:43:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:44:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:44:50 magicsock: 1 active derp conns: derp-27=cr27m0s,wr12m0s
+2026/06/03 02:44:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:44:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr27m0s,wr12m0s
+2026/06/03 02:44:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:44:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:45:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:45:50 magicsock: 1 active derp conns: derp-27=cr28m0s,wr13m0s
+2026/06/03 02:45:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:45:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr28m0s,wr13m0s
+2026/06/03 02:45:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:45:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:46:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:46:50 magicsock: 1 active derp conns: derp-27=cr29m0s,wr14m0s
+2026/06/03 02:46:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:46:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr29m0s,wr14m0s
+2026/06/03 02:46:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:46:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:47:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:47:50 magicsock: 1 active derp conns: derp-27=cr30m0s,wr15m0s
+2026/06/03 02:47:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:47:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr30m0s,wr15m0s
+2026/06/03 02:47:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:47:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:48:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:48:50 magicsock: 1 active derp conns: derp-27=cr31m0s,wr16m0s
+2026/06/03 02:48:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:48:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr31m0s,wr16m0s
+2026/06/03 02:48:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:48:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:49:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:49:50 magicsock: 1 active derp conns: derp-27=cr32m0s,wr17m0s
+2026/06/03 02:49:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:49:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr32m0s,wr17m0s
+2026/06/03 02:49:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:49:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:50:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:50:50 magicsock: 1 active derp conns: derp-27=cr33m0s,wr18m0s
+2026/06/03 02:50:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:50:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr33m0s,wr18m0s
+2026/06/03 02:50:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:50:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:51:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:51:50 magicsock: 1 active derp conns: derp-27=cr34m0s,wr19m0s
+2026/06/03 02:51:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:51:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr34m0s,wr19m0s
+2026/06/03 02:51:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:51:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:52:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:52:50 magicsock: 1 active derp conns: derp-27=cr35m0s,wr20m0s
+2026/06/03 02:52:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:52:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr35m0s,wr20m0s
+2026/06/03 02:52:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:52:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:53:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:53:50 magicsock: 1 active derp conns: derp-27=cr36m0s,wr21m0s
+2026/06/03 02:53:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:53:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr36m0s,wr21m0s
+2026/06/03 02:53:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:53:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:54:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:54:50 magicsock: 1 active derp conns: derp-27=cr37m0s,wr22m0s
+2026/06/03 02:54:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:54:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr37m0s,wr22m0s
+2026/06/03 02:54:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 02:54:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:55:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:55:50 magicsock: 1 active derp conns: derp-27=cr38m0s,wr23m0s
+2026/06/03 02:55:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:55:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr38m0s,wr23m0s
+2026/06/03 02:55:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:55:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:56:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:56:50 magicsock: 1 active derp conns: derp-27=cr39m0s,wr24m0s
+2026/06/03 02:56:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:56:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr39m0s,wr24m0s
+2026/06/03 02:56:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:56:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:57:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:57:50 magicsock: 1 active derp conns: derp-27=cr40m0s,wr25m0s
+2026/06/03 02:57:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:57:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr40m0s,wr25m0s
+2026/06/03 02:57:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:57:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:58:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:58:50 magicsock: 1 active derp conns: derp-27=cr41m0s,wr26m0s
+2026/06/03 02:58:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:58:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr41m0s,wr26m0s
+2026/06/03 02:58:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:58:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 02:59:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 02:59:50 magicsock: 1 active derp conns: derp-27=cr42m0s,wr27m0s
+2026/06/03 02:59:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 02:59:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr42m0s,wr27m0s
+2026/06/03 02:59:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 02:59:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:00:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:00:50 magicsock: 1 active derp conns: derp-27=cr43m0s,wr28m0s
+2026/06/03 03:00:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:00:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr43m0s,wr28m0s
+2026/06/03 03:00:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:00:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:01:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:01:50 magicsock: 1 active derp conns: derp-27=cr44m0s,wr29m0s
+2026/06/03 03:01:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:01:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr44m0s,wr29m0s
+2026/06/03 03:01:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 03:01:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:02:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:02:50 magicsock: 1 active derp conns: derp-27=cr45m0s,wr30m0s
+2026/06/03 03:02:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:02:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr45m0s,wr30m0s
+2026/06/03 03:02:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 03:02:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:03:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:03:50 magicsock: 1 active derp conns: derp-27=cr46m0s,wr31m0s
+2026/06/03 03:03:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:03:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr46m0s,wr31m0s
+2026/06/03 03:03:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 03:03:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:04:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:04:50 magicsock: 1 active derp conns: derp-27=cr47m0s,wr32m0s
+2026/06/03 03:04:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:04:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr47m0s,wr32m0s
+2026/06/03 03:04:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:04:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:05:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:05:50 magicsock: 1 active derp conns: derp-27=cr48m0s,wr33m0s
+2026/06/03 03:05:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:05:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr48m0s,wr33m0s
+2026/06/03 03:05:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:05:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:06:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:06:50 magicsock: 1 active derp conns: derp-27=cr49m0s,wr34m0s
+2026/06/03 03:06:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:06:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr49m0s,wr34m0s
+2026/06/03 03:06:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:06:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:07:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:07:50 magicsock: 1 active derp conns: derp-27=cr50m0s,wr35m0s
+2026/06/03 03:07:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:07:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr50m0s,wr35m0s
+2026/06/03 03:07:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 03:07:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:08:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:08:50 magicsock: 1 active derp conns: derp-27=cr51m0s,wr36m0s
+2026/06/03 03:08:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:08:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr51m0s,wr36m0s
+2026/06/03 03:08:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:08:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:09:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:09:50 magicsock: 1 active derp conns: derp-27=cr52m0s,wr37m0s
+2026/06/03 03:09:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:09:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr52m0s,wr37m0s
+2026/06/03 03:09:50 derphttp.Client.Send: connecting to derp-16 (mia)
+2026/06/03 03:09:50 magicsock: derp-16 connected; connGen=1
+2026/06/03 03:10:50 magicsock: closing connection to derp-16 (idle), age 1m0s
+2026/06/03 03:10:50 magicsock: 1 active derp conns: derp-27=cr53m0s,wr38m0s
+2026/06/03 03:10:50 magicsock: adding connection to derp-16 for [w/r3P]
+2026/06/03 03:10:50 magicsock: 2 active derp conns: derp-16=cr0s,wr0s derp-27=cr53m0s,wr38m0s
+2026/06/03 03:10:50 derphttp.Client.Recv: connecting to derp-16 (mia)
+2026/06/03 03:10:50 magicsock: derp-16 connected; connGen=1
